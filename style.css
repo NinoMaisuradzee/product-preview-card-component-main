@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary--cream: hsl(30, 38%, 92%);
+    --primary--dark-cyan: hsl(158, 36%, 37%);
+    --neutral--very-dark-blue: hsl(212, 21%, 14%);
+    --neutral--dark-grayish-blue: hsl(228, 12%, 48%);
+    --neutral--white: hsl(0, 0%, 100%);
+    --fraunces--font: 'Fraunces', serif;
+    --montserrat--font: 'Montserrat', sans-serif;
+}
+
+/* font-family: 'Fraunces', serif;
+font-family: 'Montserrat', sans-serif; */
+
+.sub_title {
+    color: var(--neutral--dark-grayish-blue);
+    font-family: var(--montserrat--font);
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    font-size: 14px;
+}
+
+h1 {
+    font-family: var(--fraunces--font);
+    font-weight: 700;
+}
+
+.paragraph {
+    color: var(--neutral--dark-grayish-blue);
+    font-family: var(--montserrat--font);
+    font-size: 14px;
+    line-height: 22px;
+}
+
+h2 {
+    font-weight: 700;
+    font-family: var(--fraunces--font);
+    color: var(--primary--dark-cyan);
+}
+
+.price {
+    text-decoration: line-through;
+    color: var(--neutral--dark-grayish-blue);
+    font-family: var(--montserrat--font);
+    font-size: small;
+}
+
+button {
+    background-color: var(--primary--dark-cyan);
+    border: none;
+    color: var(--neutral--white);
+    font-family: var(--montserrat--font);
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 700;
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+figure {
+    background-image: url(./images/image-product-desktop.jpg);
+    width: 300px;
+    height: 450px;
+    background-size: cover; 
+  background-position: center; 
+  background-repeat: no-repeat;
+  border-radius: 20px 0 0 20px;
+}
+main {
+    display: flex;
+    justify-content: center;
+    margin: 15% auto;
+
+}
+body {
+    background-color: var(--primary--cream);
+    /* width: 1440px; */
+    /* margin: 0 auto; */
+}
+section {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--neutral--white);
+    width: 300px;
+    padding: 40px;
+    gap: 25px ;
+    border-radius: 0 20px 20px 0;
+}
+.price_box {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
